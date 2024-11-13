@@ -1,9 +1,7 @@
 import numpy as np
 import os
-from flask import Flask, request, render_template, make_response
-# from sklearn.externals 
+from flask import Flask, request, render_template, make_response 
 import joblib
-#classe=str(classe)
 app = Flask(__name__, static_url_path='/static')
 model= joblib.load('./model_KNN.pkl')
 @app.route('/')
