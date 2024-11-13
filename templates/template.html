@@ -1,0 +1,16 @@
+
+<html>
+<head>
+</head>
+<body>
+    <form action="/predict" method="POST">
+        raio: <input type="text" name="mean_radius"><br>
+        textura: <input type="text" name="mean_texture"><br>
+        perímetro: <input type="text" name="mean_perimeter"><br>
+        área: <input type="text" name="mean_area"><br>
+        suavidade: <input type="text" name="mean_smoothness"><br>
+        Class: {{result}} <br>
+        <input type="submit" value="Predict">
+    </form>
+</body>
+</html>
